@@ -3,19 +3,20 @@
   position: absolute;
   width: 100%;
   padding-top: 30px;
-  transition: background-color, 1s;
+  transition: all 1s;
 }
 
 .header--overlay {
   height: 100vh;
   background-color: $overlay-under-menu-form;
-  transition: background-color 1s;
+  transition: all 1s;
   z-index: 10;
 }
 
 .header--overlay .header__logo-link {
   @include vp-767 {
-    position: absolute;
+    transform: scale(0);
+    transition: transform 0.5s;
   }
 }
 
@@ -31,6 +32,7 @@
 .header__logo-link {
   position: relative;
   z-index: 4;
+  transition: transform 0.5s;
 }
 
 .header--overlay .header__logo-link::after {

@@ -1230,21 +1230,27 @@ button,
   position: absolute;
   width: 100%;
   padding-top: 30px;
-  -webkit-transition: background-color, 1s;
-  transition: background-color, 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .header--overlay {
   height: 100vh;
   background-color: rgba(13, 29, 51, 0.4);
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   z-index: 10;
 }
 
 @media (max-width: 767px) {
   .header--overlay .header__logo-link {
-    position: absolute;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 }
 
@@ -1265,6 +1271,10 @@ button,
 .header__logo-link {
   position: relative;
   z-index: 4;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .header--overlay .header__logo-link::after {
