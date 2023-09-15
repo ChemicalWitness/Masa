@@ -3141,6 +3141,133 @@ button,
   min-width: 223px;
 }
 
+.about__features-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #316dc2;
+  border-radius: 20px;
+}
+
+.about__features-list {
+  padding: 70px 106px;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  -webkit-column-gap: 52px;
+     -moz-column-gap: 52px;
+          column-gap: 52px;
+  row-gap: 54px;
+}
+@media (max-width: 1199px) {
+  .about__features-list {
+    padding: 40px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+    row-gap: 22px;
+    padding: 40px 20px;
+  }
+}
+
+.about__features-list li {
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199px) {
+  .about__features-list li {
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-list li {
+    padding: 24px 20px;
+  }
+}
+
+.about__features-list svg {
+  position: absolute;
+  top: -21px;
+  left: -21px;
+}
+
+.about__features-list-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .about__features-list-content {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    gap: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-list-content {
+    gap: 8px;
+  }
+}
+
+.about__features-list-content h3 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .about__features-list-content h3 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    padding-right: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-list-content h3 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    padding-right: 0;
+  }
+}
+
+.about__features-list-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .about__features-list-content p {
+    font-size: 14px;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
