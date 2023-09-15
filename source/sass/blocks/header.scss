@@ -4,6 +4,10 @@
   width: 100%;
   padding-top: 30px;
   transition: all 1s;
+
+  @include vp-767 {
+    padding-top: 18px;
+  }
 }
 
 .header--overlay {
