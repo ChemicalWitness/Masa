@@ -2811,8 +2811,10 @@ button,
   }
 }
 
-.hero__slide-info {
-  margin: 0 auto;
+@media (max-width: 1199px) {
+  .hero__slide-info {
+    margin: 0 auto;
+  }
 }
 
 .hero__slide-pagination {
