@@ -2819,8 +2819,8 @@ button,
       -ms-flex-align: end;
           align-items: end;
   min-height: 800px;
-  padding-top: 409px;
-  padding-bottom: 45px;
+  padding-top: 398px;
+  padding-bottom: 58px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
@@ -2833,7 +2833,7 @@ button,
   .hero__slider-slide {
     min-height: 568px;
     height: auto;
-    padding-top: 259px;
+    padding-top: 230px;
     padding-bottom: 20px;
   }
 }
@@ -2918,10 +2918,10 @@ button,
 }
 
 .hero__slide-description {
-  margin-top: -1px;
+  margin-top: -8px;
   position: relative;
   padding: 1px 35px;
-  padding-bottom: 50px;
+  padding-bottom: 33px;
   padding-right: 50px;
   padding-left: 50px;
   background-color: #ffffff;
@@ -2938,6 +2938,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__slide-description {
+    margin-top: -1px;
     -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
     margin-right: 85px;
@@ -2995,6 +2996,13 @@ button,
   padding-left: 26px;
   max-width: 240px;
 }
+@media (max-width: 1199px) {
+  .hero__slide-link-wrapper {
+    -ms-flex-item-align: self-start;
+        -ms-grid-row-align: self-start;
+        align-self: self-start;
+  }
+}
 @media (max-width: 767px) {
   .hero__slide-link-wrapper {
     padding: 10px 15px;
@@ -3030,9 +3038,9 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 159px;
-     -moz-column-gap: 159px;
-          column-gap: 159px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   margin-top: 120px;
   margin-bottom: 60px;
 }
@@ -3041,12 +3049,13 @@ button,
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     margin-top: 100px;
-    row-gap: 40px;
+    row-gap: 27px;
   }
 }
 @media (max-width: 767px) {
   .about__wrapper {
-    margin-top: 67px;
+    margin-top: 45px;
+    row-gap: 30px;
   }
 }
 
@@ -3057,6 +3066,11 @@ button,
   line-height: inherit;
   color: inherit;
   font-weight: inherit;
+}
+@media (max-width: 1199px) {
+  .about__project h2 {
+    margin-bottom: 25px;
+  }
 }
 @media (max-width: 767px) {
   .about__project h2 {
@@ -3069,6 +3083,7 @@ button,
   font-size: 22px;
   line-height: 32px;
   color: #484848;
+  padding-right: 60px;
 }
 @media (max-width: 1199px) {
   .about__project p {
@@ -3087,7 +3102,7 @@ button,
 
 .about__target h3 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-size: 32px;
   line-height: 36px;
   font-weight: 400;
@@ -3104,27 +3119,29 @@ button,
   .about__target h3 {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
 .about__target p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 26px;
+  padding-right: 90px;
 }
 @media (max-width: 1199px) {
   .about__target p {
     line-height: 20px;
     padding-right: 180px;
+    margin-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
   .about__target p {
     font-size: 14px;
     padding-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 }
 
@@ -3146,27 +3163,38 @@ button,
   height: 100%;
   background-color: #316dc2;
   border-radius: 20px;
+  padding: 92px 106px;
+  padding-bottom: 55px;
+}
+@media (max-width: 1199px) {
+  .about__features-wrapper {
+    padding: 62px 40px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-wrapper {
+    padding: 42px 20px 40px 30px;
+  }
 }
 
 .about__features-list {
-  padding: 70px 106px;
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
   list-style-type: none;
   -webkit-column-gap: 52px;
      -moz-column-gap: 52px;
           column-gap: 52px;
-  row-gap: 54px;
+  row-gap: 50px;
 }
 @media (max-width: 1199px) {
   .about__features-list {
-    padding: 40px;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
+    padding: 0;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
     row-gap: 42px;
   }
 }
@@ -3176,7 +3204,6 @@ button,
     grid-template-columns: 1fr;
     gap: 0;
     row-gap: 22px;
-    padding: 40px 20px;
   }
 }
 
@@ -3185,6 +3212,7 @@ button,
   border: 1px solid #ffffff;
   border-radius: 16px;
   padding: 30px 40px;
+  padding-left: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3194,12 +3222,38 @@ button,
 }
 @media (max-width: 1199px) {
   .about__features-list li {
-    padding: 30px;
+    padding: 30px 45px 24px 30px;
   }
 }
 @media (max-width: 767px) {
   .about__features-list li {
-    padding: 24px 20px;
+    padding: 15px 10px 23px 19px;
+  }
+}
+
+.about__features-list li:nth-child(odd) {
+  padding-left: 60px;
+  padding-right: 10px;
+}
+@media (max-width: 1199px) {
+  .about__features-list li:nth-child(odd) {
+    padding: 30px 41px 24px 30px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-list li:nth-child(odd) {
+    margin: 0;
+    padding: 16px 10px 22px 19px;
+  }
+}
+
+.about__features-list > li:nth-child(even) .about__features-list-content {
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .about__features-list > li:nth-child(even) .about__features-list-content {
+    gap: 8px;
   }
 }
 
@@ -3212,15 +3266,15 @@ button,
 .about__features-list-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  -ms-grid-columns: 170px auto;
+  grid-template-columns: 170px auto;
+  gap: 10px;
 }
 @media (max-width: 1199px) {
   .about__features-list-content {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
-    gap: 12px;
+    gap: 8px;
   }
 }
 @media (max-width: 767px) {
@@ -3243,11 +3297,12 @@ button,
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.2px;
-    padding-right: 90px;
+    width: 140px;
   }
 }
 @media (max-width: 767px) {
   .about__features-list-content h3 {
+    width: auto;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.16px;
@@ -3262,8 +3317,14 @@ button,
   font-weight: 300;
   color: #ffffff;
 }
+@media (max-width: 1199px) {
+  .about__features-list-content p {
+    width: 190px;
+  }
+}
 @media (max-width: 767px) {
   .about__features-list-content p {
+    width: auto;
     font-size: 14px;
   }
 }
