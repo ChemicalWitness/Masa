@@ -20,9 +20,11 @@
   margin: 0 auto;
   max-width: 1240px;
   width: 100%;
+  overflow: hidden;
 
   @include vp-1199 {
     padding-top: 100px;
+    overflow: visible;
   }
 
   @include vp-767 {
