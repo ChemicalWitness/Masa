@@ -135,6 +135,8 @@
   list-style-type: none;
   column-gap: 52px;
   row-gap: 50px;
+  padding: 0;
+  padding-left: 20px;
 
   @include vp-1199 {
     padding: 0;
@@ -166,7 +168,7 @@
   }
 
   @include vp-767 {
-    padding: 15px 10px 23px 19px;
+    padding: 17px 10px 23px 19px;
   }
 }
 
@@ -181,7 +183,7 @@
 
   @include vp-767 {
     margin: 0;
-    padding: 16px 10px 22px 19px;
+    padding: 17px 10px 22px 19px;
   }
 }
 
@@ -214,7 +216,7 @@
   }
 
   @include vp-767 {
-    gap: 8px;
+    gap: 6px;
   }
 }
 

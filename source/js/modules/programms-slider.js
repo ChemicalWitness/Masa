@@ -21,7 +21,7 @@ export const initProgrammsSlider = () =>
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 18,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 3,
