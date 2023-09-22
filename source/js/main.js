@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import { initMenu } from './modules/initMenu';
 import { heroSlider } from './modules/hero-slider';
 import { initProgrammsSlider } from './modules/programms-slider';
+import { initNewsSlider } from './modules/news-slider';
 
 // ---------------------------------
 
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     initProgrammsSlider();
+    initNewsSlider();
     form.init();
   });
 });
