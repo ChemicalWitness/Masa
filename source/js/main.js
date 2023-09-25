@@ -1,14 +1,14 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import { initMenu } from './modules/initMenu';
-import { heroSlider } from './modules/hero-slider';
-import { initProgrammsSlider } from './modules/programms-slider';
-import { initNewsSlider } from './modules/news-slider';
-import { initAccordions } from './modules/init-accordion';
-import { initReviewsSlider } from './modules/reviews-slider';
-import { mapInit } from './modules/initMap';
-import { CustomSelect } from './vendor/custom-select.js';
+import {initMenu} from './modules/initMenu';
+import {heroSlider} from './modules/hero-slider';
+import {initProgrammsSlider} from './modules/programms-slider';
+import {initNewsSlider} from './modules/news-slider';
+import {initAccordions} from './modules/init-accordion';
+import {initReviewsSlider} from './modules/reviews-slider';
+import {mapInit} from './modules/initMap';
+import {CustomSelect} from './vendor/custom-select.js';
 
 // ---------------------------------
 
