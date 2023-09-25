@@ -7,6 +7,7 @@ import { initProgrammsSlider } from './modules/programms-slider';
 import { initNewsSlider } from './modules/news-slider';
 import { initAccordions } from './modules/init-accordion';
 import { initReviewsSlider } from './modules/reviews-slider';
+import { mapInit } from './modules/initMap';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initNewsSlider();
     initAccordions();
     initReviewsSlider();
+    mapInit();
     form.init();
   });
 });
