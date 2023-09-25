@@ -1,4 +1,4 @@
-import { Accordions } from "./accordions";
+import {Accordions} from './accordions';
 // import { accordions, initAccordions } from "./init-accordion";
 
 const header = document.querySelector('.header');
