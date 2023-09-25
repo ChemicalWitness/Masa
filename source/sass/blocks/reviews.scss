@@ -1,7 +1,9 @@
 .reviews__wrapper {
-  margin: 0 100px;
+  margin: 0 auto;
+  padding: 0 10px;
   margin-top: 120px;
   display: grid;
+  max-width: 1260px;
 
   @include vp-1199 {
     margin: 0 45px;

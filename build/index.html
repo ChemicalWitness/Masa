@@ -816,6 +816,88 @@
             </div>
           </div>
         </section>
+
+        <section class="feedback">
+          <div class="container">
+            <div class="feedback__wrapper">
+              <div class="feedback__inner-wrapper">
+                <picture>
+                  <source srcset="./img/form-image-tablet.jpg 1xm ./img/form-image-tablet@2x.jpg" width="678" height="780">
+                  <img src="./img/form-image-desktop.jpg" srcset="./img/form-image-desktop@2x.jpg 2x" width="1240" height="803" alt="Изображение пляжа">
+                </picture>
+                <h2>Напишите нам</h2>
+                <p>Оставьте ваши контакты, если у вас остались вопросы – мы на них ответим!</p>
+                <div class="form" data-form-validate="data-form-validate" data-callback="base">
+                  <form action="https://echo.htmlacademy.ru/." method="get" novalidate>
+                    <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
+                      <label>
+                        <span>Имя</span>
+                        <input type="text" name="username" aria-label="Поле ввода имени">
+                      </label>
+                    </div>
+                    <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required" data-phone-length="18">
+                      <label>
+                        <span>Телефон</span>
+                        <input type="tel" name="phone" aria-label="Поле ввода телефона">
+                      </label>
+                    </div>
+
+                    <div class="custom-input" data-validate-type="text" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                      <label>
+                        <span>Ваше сообщение</span>
+                        <textarea name="textarea" aria-label="поле ввода вопросов"></textarea>
+                      </label>
+                    </div>
+
+                    <div class="custom-select" data-select data-validate-type="select" data-on-input-validate="data-on-input-validate" data-name="some-name" data-id="select" data-required>
+                      <span>Выберите город</span>
+                      <!-- <button class="custom-select__button" type="button">
+                        <span class="custom-select__text">город</span>
+                        <span class="custom-select__icon"></span>
+                      </button>
+                      <ul class="custom-select__list">
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false">Санкт-Петербург</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false">Москва</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false">Владивосток</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false">Екатеринбург</li>
+                      </ul> -->
+                      <select id="select" name="some-name" tabindex="-1" aria-hidden="true">
+                        <option value></option>
+                        <option value="id-1">Санкт-Петербург</option>
+                        <option value="id-2">Москва</option>
+                        <option value="id-3">Владивосток</option>
+                        <option value="id-4">Екатеринбург</option>
+                      </select>
+                    </div>
+                    <div class="custom-toggle" data-validate-type="checkbox" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                      <label class="custom-toggle__label">
+                        <input type="checkbox" name="checkbox" aria-label="поле ввода телефона">
+                        <span></span>
+                        <svg width="10" height="8" aria-hidden="true">
+                          <use href="./img/sprite.svg#check"></use>
+                        </svg>
+                        <div class="custom-toggle__text">
+                          <p>Я согласен на обработку моих персональных данных</p>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form__submit-wrapper">
+                      <button class="form__submit link" type="submit" aria-label="Отправить форму">
+                        <span>Отправить</span>
+                        <span class="link__icon link__icon--alt">
+                          <svg width="10" height="10">
+                            <use href="./img/sprite.svg#arrow-big"></use>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">

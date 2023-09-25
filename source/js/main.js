@@ -8,6 +8,7 @@ import { initNewsSlider } from './modules/news-slider';
 import { initAccordions } from './modules/init-accordion';
 import { initReviewsSlider } from './modules/reviews-slider';
 import { mapInit } from './modules/initMap';
+import { CustomSelect } from './vendor/custom-select.js';
 
 // ---------------------------------
 
@@ -35,6 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initReviewsSlider();
     mapInit();
     form.init();
+    const select = new CustomSelect();
+    select.init();
   });
 });
 

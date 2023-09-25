@@ -422,6 +422,10 @@
   background-color: $color-main-btn;
 }
 
+.news__slide-button svg {
+  stroke: $color-default-white;
+}
+
 .news__slider-controls {
   grid-column: 1/-1;
   width: 100%;

@@ -45,6 +45,10 @@
   }
 }
 
+.link .link__icon--alt {
+  background-color: $color-default-white;
+}
+
 .link__icon svg {
   position: absolute;
   top: 18px;
@@ -56,4 +60,8 @@
     top: 13px;
     left: 13px;
   }
+}
+
+.link__icon--alt svg {
+  stroke: $color-main-icon;
 }

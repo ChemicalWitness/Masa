@@ -1,0 +1,50 @@
+.form span {
+  padding: 0;
+  margin-bottom: 5px;
+  color: $color-main-bg;
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.form select {
+  position: static;
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+  clip: auto;
+  clip-path: none;
+  border: 1px solid #ffffff;
+
+  background-color: $color-acc-bg;
+  border-radius: 8px;
+  color: $color-main-bg;
+}
+
+.form__submit {
+  position: relative;
+  border-color: $color-default-white;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.form__submit span {
+  margin: 0;
+}
+
+.form__submit span:first-child {
+  @include vp-1199 {
+    padding-left: 60px;
+  }
+}
+

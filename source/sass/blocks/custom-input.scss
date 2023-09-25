@@ -3,18 +3,18 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
+    padding: 4px 0 10px;
     width: 100%;
   }
 
   label {
     display: flex;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
     width: 100%;
+    margin-bottom: 16px;
 
     @media screen and (max-width: 767px) {
       align-items: flex-start;
@@ -24,13 +24,16 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
+      padding: 15px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      border: 1px solid rgba(255,255,255,.3);
+      background: #316dc2;
+      width: 100%;
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      border-radius: 8px;
       outline: none;
 
       transition: border 0.3s ease;
@@ -47,6 +50,10 @@
       &:focus {
         border: 2px solid rgba(#000000, 0.8);
       }
+    }
+
+    textarea {
+      min-height: 98px;
     }
   }
 
