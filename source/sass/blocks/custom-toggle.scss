@@ -169,3 +169,11 @@
   display: block;
   stroke: #ffffff;
 }
+
+.custom-toggle__label span:last-child {
+  margin: 0;
+  position: static;
+  width: auto;
+  height: auto;
+  border: none;
+}

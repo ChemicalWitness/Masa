@@ -822,7 +822,7 @@
             <div class="feedback__wrapper">
               <div class="feedback__inner-wrapper">
                 <picture>
-                  <source srcset="./img/form-image-tablet.jpg 1xm ./img/form-image-tablet@2x.jpg" width="678" height="780">
+                  <source media="(max-width:1199px)" srcset="./img/form-image-tablet.jpg 1x, ./img/form-image-tablet@2x.jpg 2x" width="678" height="780">
                   <img src="./img/form-image-desktop.jpg" srcset="./img/form-image-desktop@2x.jpg 2x" width="1240" height="803" alt="Изображение пляжа">
                 </picture>
                 <h2>Напишите нам</h2>
@@ -862,7 +862,6 @@
                         <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false">Екатеринбург</li>
                       </ul> -->
                       <select id="select" name="some-name" tabindex="-1" aria-hidden="true">
-                        <option value></option>
                         <option value="id-1">Санкт-Петербург</option>
                         <option value="id-2">Москва</option>
                         <option value="id-3">Владивосток</option>
@@ -876,9 +875,7 @@
                         <svg width="10" height="8" aria-hidden="true">
                           <use href="./img/sprite.svg#check"></use>
                         </svg>
-                        <div class="custom-toggle__text">
-                          <p>Я согласен на обработку моих персональных данных</p>
-                        </div>
+                        <span>Я согласен на обработку моих персональных данных</span>
                       </label>
                     </div>
                     <div class="form__submit-wrapper">
