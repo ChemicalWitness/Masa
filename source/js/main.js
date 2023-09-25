@@ -6,6 +6,7 @@ import { heroSlider } from './modules/hero-slider';
 import { initProgrammsSlider } from './modules/programms-slider';
 import { initNewsSlider } from './modules/news-slider';
 import { initAccordions } from './modules/init-accordion';
+import { initReviewsSlider } from './modules/reviews-slider';
 
 // ---------------------------------
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initProgrammsSlider();
     initNewsSlider();
     initAccordions();
+    initReviewsSlider();
     form.init();
   });
 });

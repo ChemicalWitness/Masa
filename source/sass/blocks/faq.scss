@@ -5,7 +5,7 @@
   align-items: center;
 
   @include vp-1199 {
-    padding-top: 100px;
+    padding-top: 95px;
   }
 
   @include vp-767 {
@@ -16,7 +16,7 @@
 .faq__title h2 {
   font: inherit;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 
   @include vp-1199 {
     margin-bottom: 40px;
@@ -41,21 +41,50 @@
 .faq__qustions-item {
   border: 1px solid $color-main-btn;
   border-radius: 16px;
-  padding: 40px;
+  padding: 39px;
   color: $color-add-text;
 
   @include vp-1199 {
-    padding: 30px;
+    padding: 29px;
   }
 
   @include vp-767 {
-    padding: 20px;
+    padding: 20px 14px 18px;
+  }
+}
+
+.faq__qustions-item:nth-child(n+4) {
+  padding: 32px 39px;
+
+  @include vp-1199 {
+    padding: 23px 29px 25px;
+  }
+
+  @include vp-767 {
+    padding: 20px 14px 18px;
+  }
+}
+
+.faq__qustions-item:nth-child(n+4) .faq__qustions-button {
+  margin-top: 5px;
+
+  @include vp-767 {
+    margin-top: 0;
   }
 }
 
 .faq__qustions-item.is-active {
   background-color: $color-acc-bg;
   color: $color-default-white;
+  padding-bottom: 35px;
+
+  @include vp-1199 {
+    padding-bottom: 28px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 13px;
+  }
 }
 
 .faq__qustions-title {
@@ -118,11 +147,24 @@
   transform: rotate(90deg);
 }
 
+.faq__qustions-item.is-active .faq__qustions-button::after {
+  display: none;
+}
+
+.faq__qustions-item.is-active .faq__qustions-button::before {
+  background-color: $color-main-icon;
+}
+
+
+.faq__qustions-item.is-active .faq__qustions-button {
+  background-color: $color-default-white;
+}
+
 .faq__qustions-description {
   max-height: 0;
   transition: max-height 0.5s;
   overflow: hidden;
-  padding-right: 350px;
+  padding-right: 300px;
 
   @include vp-1199 {
     padding-right: 80px;
@@ -135,11 +177,13 @@
 
 .faq__qustions-description p {
   margin: 0;
+  margin-top: 12px;
   font-size: 16px;
   line-height: 26px;
   color: $color-main-bg;
 
   @include vp-1199 {
+    margin-top: 15px;
     line-height: 20px;
   }
 

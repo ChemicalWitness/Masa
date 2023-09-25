@@ -12,19 +12,25 @@ export const initNewsSlider = () =>
       el: '.news__slider-pagination',
       clickable: true,
     },
-    simulateTouch: false,
     breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 32,
       },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+        },
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
+      },
     },
+    simulateTouch: false,
   });
