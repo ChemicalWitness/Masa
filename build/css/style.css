@@ -371,8 +371,8 @@ template {
 
 .swiper-android .swiper-slide,
 .swiper-wrapper {
-  -webkit-transform: translate3d(0px, 0, 0);
-          transform: translate3d(0px, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .swiper-pointer-events {
@@ -421,7 +421,7 @@ template {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 /* 3D Effects */
@@ -546,6 +546,7 @@ template {
 
 .swiper-virtual .swiper-slide {
   -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
@@ -566,13 +567,6 @@ template {
 .swiper-virtual.swiper-css-mode.swiper-vertical .swiper-wrapper::after {
   width: 1px;
   height: var(--swiper-virtual-size);
-}
-
-:root {
-  --swiper-navigation-size: 44px;
-  /*
-  --swiper-navigation-color: var(--swiper-theme-color);
-  */
 }
 
 .swiper-button-prev,
@@ -612,14 +606,13 @@ template {
 
 .swiper-navigation-disabled .swiper-button-prev,
 .swiper-navigation-disabled .swiper-button-next {
-  display: none !important;
+  display: none;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-family: swiper-icons;
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
+  text-transform: none;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
@@ -631,8 +624,8 @@ template {
   right: auto;
 }
 
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
   content: "prev";
 }
 
@@ -642,27 +635,13 @@ template {
   left: auto;
 }
 
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
   content: "next";
 }
 
 .swiper-button-lock {
   display: none;
-}
-
-:root {
-  /*
-  --swiper-pagination-color: var(--swiper-theme-color);
-  --swiper-pagination-bullet-size: 8px;
-  --swiper-pagination-bullet-width: 8px;
-  --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-inactive-color: #000;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-vertical-gap: 6px;
-  */
 }
 
 .swiper-pagination {
@@ -681,7 +660,7 @@ template {
 
 .swiper-pagination-disabled > .swiper-pagination,
 .swiper-pagination.swiper-pagination-disabled {
-  display: none !important;
+  display: none;
 }
 
 /* Common Styles */
@@ -765,8 +744,8 @@ button.swiper-pagination-bullet {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -774,7 +753,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet:only-child {
-  display: none !important;
+  display: none;
 }
 
 .swiper-pagination-bullet-active {
@@ -786,8 +765,8 @@ button.swiper-pagination-bullet {
 .swiper-pagination-vertical.swiper-pagination-bullets {
   right: 10px;
   top: 50%;
-  -webkit-transform: translate3d(0px, -50%, 0);
-          transform: translate3d(0px, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
 }
 
 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -899,12 +878,13 @@ button.swiper-pagination-bullet {
   border-radius: 10px;
   position: relative;
   -ms-touch-action: none;
+      touch-action: none;
   background: rgba(0, 0, 0, 0.1);
 }
 
 .swiper-scrollbar-disabled > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-disabled {
-  display: none !important;
+  display: none;
 }
 
 .swiper-horizontal > .swiper-scrollbar,
@@ -975,12 +955,6 @@ button.swiper-pagination-bullet {
 }
 
 /* Preloader */
-:root {
-  /*
-  --swiper-preloader-color: var(--swiper-theme-color);
-  */
-}
-
 .swiper-lazy-preloader {
   width: 42px;
   height: 42px;
@@ -1007,11 +981,11 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-lazy-preloader-white {
-  --swiper-preloader-color: #fff;
+  --swiper-preloader-color: #ffffff;
 }
 
 .swiper-lazy-preloader-black {
-  --swiper-preloader-color: #000;
+  --swiper-preloader-color: #000000;
 }
 
 @-webkit-keyframes swiper-preloader-spin {
@@ -1092,7 +1066,7 @@ button.swiper-pagination-bullet {
 .swiper-cube .swiper-slide {
   pointer-events: none;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   z-index: 1;
   visibility: hidden;
   -webkit-transform-origin: 0 0;
@@ -1131,22 +1105,22 @@ button.swiper-pagination-bullet {
 .swiper-cube .swiper-slide-shadow-right {
   z-index: 0;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .swiper-cube .swiper-cube-shadow {
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 100%;
   opacity: 0.6;
   z-index: 0;
 }
 
-.swiper-cube .swiper-cube-shadow:before {
+.swiper-cube .swiper-cube-shadow::before {
   content: "";
-  background: #000;
+  background: #000000;
   position: absolute;
   left: 0;
   top: 0;
@@ -1163,7 +1137,7 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide {
   pointer-events: none;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   z-index: 1;
 }
 
@@ -1182,12 +1156,12 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide-shadow-right {
   z-index: 0;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .swiper-creative .swiper-slide {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow: hidden;
   -webkit-transition-property: opacity, height, -webkit-transform;
   transition-property: opacity, height, -webkit-transform;
@@ -1204,7 +1178,7 @@ button.swiper-pagination-bullet {
       -ms-transform-origin: center bottom;
           transform-origin: center bottom;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow: hidden;
 }
 
