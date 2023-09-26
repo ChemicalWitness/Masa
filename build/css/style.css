@@ -1787,7 +1787,7 @@ button,
   color: #316dc2;
 }
 
-.modal__inner-wrapper p {
+.modal__inner-wrapper > .custom-toggle__label span {
   margin: 0;
   margin-bottom: 19px;
   font-size: 16px;
@@ -1802,6 +1802,10 @@ button,
 
 .modal__close-btn:active {
   opacity: 1;
+}
+
+.modal__submit-wrapper {
+  text-align: center;
 }
 
 .custom-input,
@@ -2038,7 +2042,7 @@ button,
   padding: 0 0 0 30px;
   cursor: pointer;
 }
-.custom-toggle label span {
+.custom-toggle label .custom-toggle__checkbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -2135,26 +2139,19 @@ button,
   stroke: #316dc2;
 }
 
-.custom-toggle__label span:last-child {
-  margin: 0;
-  position: static;
-  width: auto;
-  height: auto;
-  border: none;
-}
-
-.custom-toggle__label p {
+.custom-toggle--state > .custom-toggle__label span {
   font-size: 12px;
   opacity: 0.8;
+  margin-bottom: 0;
 }
 
-.custom-toggle__label input:checked + span {
+.custom-toggle__label input:checked + .custom-toggle__checkbox {
   background: #ffffff;
   opacity: 1;
 }
 
-.custom-toggle__label:focus-within:not(:disabled) span,
-.custom-toggle__label:hover:not(:disabled) span {
+.custom-toggle__label:focus-within:not(:disabled) .custom-toggle__checkbox,
+.custom-toggle__label:hover:not(:disabled) .custom-toggle__checkbox {
   border: 1px solid #ffffff;
   background: #316dc2;
 }
@@ -2164,7 +2161,7 @@ button,
   stroke: #ffffff;
 }
 
-.custom-toggle--modal p {
+.custom-toggle--modal span {
   color: rgb(72, 72, 72);
 }
 
@@ -5928,10 +5925,6 @@ button,
     font-size: 12px;
     line-height: 14px;
   }
-}
-
-.form__submit-wrapper {
-  text-align: center;
 }
 
 .form__submit {

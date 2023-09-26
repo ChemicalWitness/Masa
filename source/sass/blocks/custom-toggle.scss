@@ -49,7 +49,7 @@
     padding: 0 0 0 30px;
     cursor: pointer;
 
-    span {
+    .custom-toggle__checkbox {
       position: absolute;
       top: 0;
       left: 0;
@@ -170,26 +170,27 @@
   stroke: #316dc2;
 }
 
-.custom-toggle__label span:last-child {
-  margin: 0;
-  position: static;
-  width: auto;
-  height: auto;
-  border: none;
-}
+// .custom-toggle__label span:last-child {
+//   margin: 0;
+//   position: static;
+//   width: auto;
+//   height: auto;
+//   border: none;
+// }
 
-.custom-toggle__label p {
+.custom-toggle--state > .custom-toggle__label span {
   font-size: 12px;
   opacity: 0.8;
+  margin-bottom: 0;
 }
 
-.custom-toggle__label input:checked + span {
+.custom-toggle__label input:checked + .custom-toggle__checkbox {
   background: #ffffff;
   opacity: 1;
 }
 
-.custom-toggle__label:focus-within:not(:disabled) span,
-.custom-toggle__label:hover:not(:disabled) span {
+.custom-toggle__label:focus-within:not(:disabled) .custom-toggle__checkbox,
+.custom-toggle__label:hover:not(:disabled) .custom-toggle__checkbox {
   border: 1px solid #ffffff;
   background: #316dc2;
 }
@@ -199,6 +200,6 @@
   stroke: #ffffff;
 }
 
-.custom-toggle--modal p {
+.custom-toggle--modal span {
   color: rgba(72, 72, 72, 1);
 }
