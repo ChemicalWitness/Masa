@@ -9,7 +9,7 @@ import {initAccordions} from './modules/init-accordion';
 import {initReviewsSlider} from './modules/reviews-slider';
 import {mapInit} from './modules/initMap';
 import {CustomSelect} from './vendor/custom-select.js';
-import { onChangeCategory } from './modules/news-category';
+import {onChangeCategory} from './modules/news-category';
 
 // ---------------------------------
 
