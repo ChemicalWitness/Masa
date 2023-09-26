@@ -161,7 +161,6 @@
 
   @include vp-1199 {
     padding: 30px 45px 24px 30px;
-    // align-items: start;
   }
 
   @include vp-767 {
@@ -191,10 +190,6 @@
     gap: 8px;
   }
 }
-
-// .about__features-list li:nth-child(odd) {
-//   padding: 30px 40px 30px 40px;
-// }
 
 .about__features-list svg {
   position: absolute;
