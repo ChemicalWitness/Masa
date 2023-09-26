@@ -8,7 +8,7 @@ const heroSlider = () =>
     slidesPerView: 1,
     spaceBetween: 0,
     pagination: {
-      el: '.hero__slide-pagination',
+      el: '.hero__pagination',
       clickable: true,
     },
     simulateTouch: false,

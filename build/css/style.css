@@ -669,7 +669,6 @@ template {
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 10px;
-  left: 0;
 }
 
 /* Bullets */
@@ -3115,6 +3114,10 @@ button,
   }
 }
 
+.hero__wrapper {
+  position: relative;
+}
+
 .hero__slider-slide picture,
 .hero__slider-slide img {
   position: absolute;
@@ -3191,7 +3194,22 @@ button,
   }
 }
 
-.hero__slide-pagination {
+.hero__pagination-wrapper {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+.hero__pagination {
+  position: absolute;
+  top: 424px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 30px;
+  left: 20px;
   background-color: #ffffff;
   margin-right: auto;
   width: -webkit-fit-content;
@@ -3200,9 +3218,11 @@ button,
   border-radius: 20px 20px 0 0;
   margin-bottom: -1px;
   padding: 7px 17px;
+  max-height: 40px;
+  z-index: 10;
 }
 @media (max-width: 767px) {
-  .hero__slide-pagination {
+  .hero__pagination {
     border-radius: 12px 12px 0 0;
     padding: 3px 14px;
   }
