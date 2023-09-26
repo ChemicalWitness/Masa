@@ -42,14 +42,6 @@
         max-width: unset;
         width: 100%;
       }
-
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
-
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
-      }
     }
 
     textarea {
@@ -83,6 +75,7 @@
     input,
     textarea {
       border: 2px solid #ff1553;
+      background: rgba(255, 94, 102, 0.2);
 
       &:focus,
       &:hover {
@@ -115,4 +108,47 @@
       color: #15ab07;
     }
   }
+}
+
+.custom-input--state label input:hover:not(:disabled),
+.custom-input--state label textarea:hover:not(:disabled) {
+  outline: 0;
+  border: 1px solid #ffffff;
+  opacity: 1;
+}
+
+.custom-input--state label input:active:not(:disabled),
+.custom-input--state label textarea:active:not(:disabled) {
+  outline: 0;
+  border: 1px solid #ffffff;
+}
+
+.custom-input--state label input:focus-within:not(:disabled),
+.custom-input--state label textarea:focus-within:not(:disabled) {
+  outline: 0;
+  border: 1px solid #ffffff;
+}
+
+.custom-input--state label input:disabled,
+.custom-input--state label textarea:disabled {
+  opacity: 0.4;
+}
+
+.custom-input--state label:focus-within:not(:disabled) span,
+.custom-input--state label:hover:not(:disabled) span,
+.custom-toggle__label:focus-within:not(:disabled) p,
+.custom-toggle__label:hover:not(:disabled) p {
+  opacity: 1;
+}
+
+
+.custom-input--modal label > input {
+  background-color: transparent;
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  color: rgba(72, 72, 72);
+}
+
+.custom-input--modal label > input:hover:not(:disabled),
+.custom-input--modal label > input:focus-within:not(:disabled) {
+  border: 1px solid rgba(72, 72, 72, 1);
 }

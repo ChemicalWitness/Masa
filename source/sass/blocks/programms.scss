@@ -271,6 +271,21 @@
   align-items: center;
 }
 
+.programms__slide-button:hover,
+.programms__slide-button:focus-visible {
+  background-color: transparent;
+}
+
+.programms__slide-button:hover svg,
+.programms__slide-button:focus-visible svg {
+  stroke: $color-main-icon;
+  transform: rotate(45deg);
+}
+
+.programms__slide-button:active {
+  background-color: rgba(49, 109, 194, 0.2);
+}
+
 .programms__slide-button svg {
   stroke: $color-default-white;
 }
@@ -288,6 +303,22 @@
   border: none;
   width: 22px;
   height: 22px;
+  user-select: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.programms__button:hover:not(:disabled),
+.programms__button:focus-visible:not(:disabled) {
+  background-color: #ffffff;
+}
+
+.programms__button:active:not(:disabled) svg {
+  opacity: 0.7;
+}
+
+.programms__button:disabled {
+  opacity: 0.3;
 }
 
 .programms__button--prev {

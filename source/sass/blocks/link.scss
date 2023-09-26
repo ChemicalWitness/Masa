@@ -9,6 +9,8 @@
   margin-right: auto;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
+  cursor: pointer;
 
   @include vp-767 {
     width: 100%;
@@ -18,6 +20,53 @@
   }
 }
 
+.link:hover,
+.link:focus-visible {
+  background-color: $color-main-btn;
+  outline: none;
+}
+
+.link:hover span,
+.link:focus-visible span {
+  color: $color-default-white;
+}
+
+.link:hover .link__icon,
+.link:focus-visible .link__icon {
+  background-color: $color-default-white;
+}
+
+.link:hover .link__icon > svg,
+.link:focus-visible .link__icon > svg {
+  stroke: $color-main-icon;
+  transform: rotate(45deg);
+}
+
+.link--alt:hover,
+.link--alt:focus-visible {
+  background-color: $color-default-white;
+}
+
+.link--alt:hover span,
+.link--alt:focus-visible span {
+  color: $color-add-text;
+}
+
+.link--alt:hover .link__icon--alt,
+.link--alt:focus-visible .link__icon--alt {
+  background-color: $color-acc-bg;
+}
+
+.link--alt:hover .link__icon--alt > svg,
+.link--alt:focus-visible .link__icon--alt > svg {
+  stroke: #ffffff;
+}
+
+.link:active span:first-child,
+.link:active svg {
+  opacity: 0.5;
+}
+
 .link span {
   font-size: 14px;
   line-height: 14px;
@@ -25,6 +74,7 @@
   letter-spacing: 0.28px;
   text-transform: uppercase;
   color: $color-add-text;
+  opacity: 1;
 
   @include vp-767 {
     font-size: 12px;

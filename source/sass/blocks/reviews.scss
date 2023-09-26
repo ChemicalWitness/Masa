@@ -223,6 +223,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.reviews__button:hover:not(:disabled),
+.reviews__button:focus-visible:not(:disabled) {
+  background-color: #ffffff;
+}
+
+.reviews__button:active:not(:disabled) svg {
+  opacity: 0.7;
+}
+
+.reviews__button:disabled {
+  opacity: 0.3;
 }
 
 .reviews__button--prev {

@@ -141,6 +141,30 @@
   }
 }
 
+.contacts__link {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-default-white;
+  user-select: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.contacts__link:hover,
+.contacts__link:focus-visible {
+  border-bottom: 1px solid $color-default-white;
+}
+
+.contacts__link:active {
+  border: none;
+  opacity: 0.8;
+}
+
 .contacts__item--phone {
   max-width: 132px;
 }

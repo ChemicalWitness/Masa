@@ -9,6 +9,7 @@ import {initAccordions} from './modules/init-accordion';
 import {initReviewsSlider} from './modules/reviews-slider';
 import {mapInit} from './modules/initMap';
 import {CustomSelect} from './vendor/custom-select.js';
+import { onChangeCategory } from './modules/news-category';
 
 // ---------------------------------
 
@@ -30,14 +31,15 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     const form = new Form();
     window.form = form;
+    const select = new CustomSelect();
+    select.init();
     initProgrammsSlider();
+    onChangeCategory();
     initNewsSlider();
     initAccordions();
     initReviewsSlider();
     mapInit();
     form.init();
-    const select = new CustomSelect();
-    select.init();
   });
 });
 

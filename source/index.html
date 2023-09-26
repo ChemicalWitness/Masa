@@ -28,7 +28,7 @@
               <div class="header__nav-inner-wrapper" data-accordion="content">
                 <ul class="header__nav-list" data-accordion="parent">
                   <li>
-                    <a class="header__nav-link">О проекте</a>
+                    <a class="header__nav-link" href="#about">О проекте</a>
                   </li>
                   <li class="header__nav-element" data-accordion="element">
                     <button class="header__accordion-button" data-accordion="button">
@@ -40,25 +40,25 @@
                     <div class="header__accordion-list" data-accordion="content">
                       <ul>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Стажировки</a>
+                          <a class="header__nav-link header__nav-sublink" href="#programms">Стажировки</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Волонтёрство</a>
+                          <a class="header__nav-link header__nav-sublink" href="#prgramms">Волонтёрство</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Учёба</a>
+                          <a class="header__nav-link header__nav-sublink" href="#programms">Учёба</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Религия</a>
+                          <a class="header__nav-link header__nav-sublink" href="#programms">Религия</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li>
-                    <a class="header__nav-link">Как поехать</a>
+                    <a class="header__nav-link" href="#conditions">Как поехать</a>
                   </li>
                   <li>
-                    <a class="header__nav-link">Отзывы</a>
+                    <a class="header__nav-link" href="#reviews">Отзывы</a>
                   </li>
                   <li class="header__nav-element" data-accordion="element">
                     <button class="header__accordion-button" data-accordion="button">
@@ -70,25 +70,25 @@
                     <div class="header__accordion-list" data-accordion="content">
                       <ul>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Общее</a>
+                          <a class="header__nav-link header__nav-sublink" href="#news">Общее</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Волонтёрство</a>
+                          <a class="header__nav-link header__nav-sublink" href="#news">Волонтёрство</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Стажировки</a>
+                          <a class="header__nav-link header__nav-sublink" href="#news">Стажировки</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Карьера</a>
+                          <a class="header__nav-link header__nav-sublink" href="#news">Карьера</a>
                         </li>
                         <li>
-                          <a class="header__nav-link header__nav-sublink">Путешествия</a>
+                          <a class="header__nav-link header__nav-sublink" href="#news">Путешествия</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li>
-                    <a class="header__nav-link">Контакты</a>
+                    <a class="header__nav-link" href="#contacts">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -203,7 +203,7 @@
           </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <div class="about__wrapper">
               <div class="about__project title">
@@ -214,14 +214,14 @@
                 <h3>Наша цель</h3>
                 <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются Израиль и еврейские общины во всем мире. Цель центра – наделить этих людей способностью инициировать значимые изменения. </p>
                 <div class="about__more-wrapper">
-                  <a class="about__more link" href="#">
+                  <button type="button" class="about__more link" data-open-modal="feedback">
                     <span>Подробнее о проекте</span>
                     <span class="link__icon">
                       <svg width="10" height="10">
                         <use href="./img/sprite.svg#arrow-big"></use>
                       </svg>
                     </span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@
           </div>
         </section>
 
-        <section class="programms">
+        <section class="programms" id="programms">
           <!-- <div class="container"> -->
           <div class="programms__wrapper">
             <div class="programms__title title">
@@ -420,7 +420,7 @@
           <!-- </div> -->
         </section>
 
-        <section class="conditions">
+        <section class="conditions" id="conditions">
           <div class="container">
             <div class="conditions__wrapper">
               <div class="conditions__how-get">
@@ -453,7 +453,7 @@
           </div>
         </section>
 
-        <section class="news">
+        <section class="news" id="news">
           <div class="container">
             <div class="news__wrapper">
               <div class="news__title title">
@@ -462,19 +462,19 @@
               <div class="news__category-wrapper">
                 <ol class="news__category-list">
                   <li class="news__category-item">
-                    <a class="news__category-link">Общее</a>
+                    <button type="button" class="news__category-link news__category-link--current">Общее</button>
                   </li>
                   <li class="news__category-item">
-                    <a class="news__category-link">Волонтёрство</a>
+                    <button type="button" class="news__category-link">Волонтёрство</button>
                   </li>
                   <li class="news__category-item">
-                    <a class="news__category-link">Стажировки</a>
+                    <button type="button" class="news__category-link">Стажировки</button>
                   </li>
                   <li class="news__category-item">
-                    <a class="news__category-link">Карьера</a>
+                    <button type="button"a class="news__category-link">Карьера</button>
                   </li>
                   <li class="news__category-item">
-                    <a class="news__category-link">Путешествия</a>
+                    <button type="button" class="news__category-link">Путешествия</button>
                   </li>
                 </ol>
               </div>
@@ -709,7 +709,7 @@
           </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="reviews__wrapper">
             <div class="reviews__title title">
               <h2>Отзывы</h2>
@@ -829,7 +829,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__wrapper">
               <div class="contacts__title title">
@@ -842,11 +842,11 @@
                 </div>
                 <div class="contacts__item contacts__item--phone">
                   <span>Телефон</span>
-                  <p>+7 963 876 876 76</p>
+                  <a class="contacts__link" href="tel:+796387687676">+7 963 876 876 76</a>
                 </div>
                 <div class="contacts__item contacts__item--email">
                   <span>E-mail</span>
-                  <p>Info@masa.ru</p>
+                  <a class="contacts__link" href="mailto:Info@masa.ru">Info@masa.ru</a>
                 </div>
               </div>
               <div class="contacts__map-wrapper">
@@ -880,57 +880,51 @@
                 <p>Оставьте ваши контакты, если у вас остались вопросы – мы на них ответим!</p>
                 <div class="form" data-form-validate="data-form-validate" data-callback="base">
                   <form action="https://echo.htmlacademy.ru/." method="get" novalidate>
-                    <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
+                    <div class="custom-input custom-input--state" data-validate-type="text" data-limitation="name" data-required="data-required">
                       <label>
                         <span>Имя</span>
                         <input type="text" name="username" aria-label="Поле ввода имени">
                       </label>
                     </div>
-                    <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required" data-phone-length="18">
+                    <div class="custom-input custom-input--state" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required" data-phone-length="18">
                       <label>
                         <span>Телефон</span>
                         <input type="tel" name="phone" aria-label="Поле ввода телефона">
                       </label>
                     </div>
 
-                    <div class="custom-input" data-validate-type="text" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                    <div class="custom-input custom-input--state" data-validate-type="text" data-on-input-validate="data-on-input-validate" data-required="data-required">
                       <label>
                         <span>Ваше сообщение</span>
                         <textarea name="textarea" aria-label="поле ввода вопросов"></textarea>
                       </label>
                     </div>
 
-                    <div class="custom-select" data-select data-validate-type="select" data-on-input-validate="data-on-input-validate" data-name="some-name" data-id="select" data-required>
+                    <div class="custom-select custom-select--state" data-select data-validate-type="select" data-on-input-validate="data-on-input-validate" data-name="some-name" data-id="select" data-required>
                       <span>Выберите город</span>
-                      <!-- <button class="custom-select__button" type="button">
-                        <span class="custom-select__text">город</span>
+                      <button class="custom-select__button" type="button">
+                        <span class="custom-select__text"></span>
                         <span class="custom-select__icon"></span>
                       </button>
                       <ul class="custom-select__list">
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false">Санкт-Петербург</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false">Москва</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false">Владивосток</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false">Екатеринбург</li>
-                      </ul> -->
-                      <select id="select" name="some-name" tabindex="-1" aria-hidden="true">
-                        <option value="id-1">Санкт-Петербург</option>
-                        <option value="id-2">Москва</option>
-                        <option value="id-3">Владивосток</option>
-                        <option value="id-4">Екатеринбург</option>
-                      </select>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-2">Москва</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-3">Владивосток</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-4">Екатеринбург</li>
+                      </ul>
                     </div>
-                    <div class="custom-toggle" data-validate-type="checkbox" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                    <div class="custom-toggle custom-toggle--state" data-validate-type="checkbox" data-on-input-validate="data-on-input-validate" data-required="data-required">
                       <label class="custom-toggle__label">
                         <input type="checkbox" name="checkbox" aria-label="поле ввода телефона">
                         <span></span>
                         <svg width="10" height="8" aria-hidden="true">
                           <use href="./img/sprite.svg#check"></use>
                         </svg>
-                        <span>Я согласен на обработку моих персональных данных</span>
+                        <p>Я согласен на обработку моих персональных данных</p>
                       </label>
                     </div>
                     <div class="form__submit-wrapper">
-                      <button class="form__submit link" type="submit" aria-label="Отправить форму">
+                      <button class="form__submit link link--alt" type="submit" aria-label="Отправить форму">
                         <span>Отправить</span>
                         <span class="link__icon link__icon--alt">
                           <svg width="10" height="10">
@@ -956,43 +950,43 @@
             <div class="footer__menu-wrapper">
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link">О проекте</a>
+                  <a class="footer__menu-link" href="#about">О проекте</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link">Программы</a>
+                  <a class="footer__menu-link" href="#programms">Программы</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link">Как поехать</a>
+                  <a class="footer__menu-link" href="#conditions">Как поехать</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link">Отзывы</a>
+                  <a class="footer__menu-link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link">Новости</a>
+                  <a class="footer__menu-link" href="#news">Новости</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link">Контакты</a>
+                  <a class="footer__menu-link" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </div>
             <div class="footer__social-wrapper">
               <ul class="footer__social-list">
                 <li class="footer__social-item">
-                  <a class="footer__social-link" aria-label="Мы в ВК">
+                  <a class="footer__social-link" href="#" aria-label="Мы в ВК">
                     <svg width="16" height="16">
                       <use href="./img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" aria-label="Мы в ОК">
+                  <a class="footer__social-link" href="#" aria-label="Мы в ОК">
                     <svg width="16" height="16">
                       <use href="./img/sprite.svg#odnoklassniki"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" aria-label="Мы в реддите">
+                  <a class="footer__social-link" href="#" aria-label="Мы в реддите">
                     <svg width="16" height="16">
                       <use href="./img/sprite.svg#reddit"></use>
                     </svg>
@@ -1010,14 +1004,66 @@
     </div>
 
     <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
+          <div class="modal__inner-wrapper" data-form-validate="data-form-validate" data-callback="base">
+            <h2>Напишите нам</h2>
+            <p>Оставьте ваши контакты, если у вас остались вопросы мы на них ответим!</p>
+            <form action="https://echo.htmlacademy.ru/." method="get" novalidate>
+              <div class="custom-input custom-input--state custom-input--modal" data-validate-type="text" data-limitation="name" data-required="data-required">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="username" aria-label="Поле ввода имени">
+                </label>
+              </div>
+              <div class="custom-input custom-input--state custom-input--modal" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required" data-phone-length="18">
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" aria-label="Поле ввода телефона">
+                </label>
+              </div>
+
+              <div class="custom-select custom-select--state custom-select--modal" data-select data-validate-type="select" data-on-input-validate="data-on-input-validate" data-name="some-name" data-id="select" data-required>
+                <span>Выберите город</span>
+                <button class="custom-select__button" type="button">
+                  <span class="custom-select__text"></span>
+                  <span class="custom-select__icon"></span>
+                </button>
+                <ul class="custom-select__list">
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-2">Москва</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-3">Владивосток</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-4">Екатеринбург</li>
+                </ul>
+              </div>
+              <div class="custom-toggle custom-toggle--state custom-toggle--modal" data-validate-type="checkbox" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                <label class="custom-toggle__label">
+                  <input type="checkbox" name="checkbox" aria-label="поле ввода телефона">
+                  <span></span>
+                  <svg width="10" height="8" aria-hidden="true">
+                    <use href="./img/sprite.svg#check"></use>
+                  </svg>
+                  <p>Я согласен на обработку моих персональных данных</p>
+                </label>
+              </div>
+              <div class="form__submit-wrapper">
+                <button class="link" type="submit" aria-label="Отправить форму">
+                  <span>Отправить</span>
+                  <span class="link__icon">
+                    <svg width="10" height="10">
+                      <use href="./img/sprite.svg#arrow-big"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+
+            </form>
+          </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
+            <svg width="20" height="20">
+              <use xlink:href="./img/sprite.svg#close-modal"></use>
             </svg>
           </button>
         </div>
@@ -1028,7 +1074,7 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
@@ -1042,7 +1088,7 @@
         <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
         <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
       </div>
-    </section> -->
+    </section>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

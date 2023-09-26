@@ -135,7 +135,7 @@
 
   &.is-invalid {
     label span {
-      color: #ff1553;
+      border-color: #ff0000;
     }
   }
 
@@ -167,7 +167,7 @@
 
 .custom-toggle__label input:checked ~ svg {
   display: block;
-  stroke: #ffffff;
+  stroke: #316dc2;
 }
 
 .custom-toggle__label span:last-child {
@@ -176,4 +176,29 @@
   width: auto;
   height: auto;
   border: none;
+}
+
+.custom-toggle__label p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.custom-toggle__label input:checked + span {
+  background: #ffffff;
+  opacity: 1;
+}
+
+.custom-toggle__label:focus-within:not(:disabled) span,
+.custom-toggle__label:hover:not(:disabled) span {
+  border: 1px solid #ffffff;
+  background: #316dc2;
+}
+
+.custom-toggle__label:focus-within:not(:disabled) svg,
+.custom-toggle__label:hover:not(:disabled) svg {
+  stroke: #ffffff;
+}
+
+.custom-toggle--modal p {
+  color: rgba(72, 72, 72, 1);
 }

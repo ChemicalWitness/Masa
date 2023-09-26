@@ -39,6 +39,15 @@
   transition: transform 0.5s;
 }
 
+.header__logo-link:hover,
+.header__logo-link:focus-visible {
+  opacity: 0.7;
+}
+
+.header__logo-link:active {
+  opacity: 1;
+}
+
 .header--overlay .header__logo-link::after {
   content: "";
   position: absolute;
@@ -93,6 +102,29 @@
   align-items: center;
   border-radius: 30px;
   transition: background-color 0.5s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header__button-toggle:hover,
+.header__button-toggle:focus-visible {
+  color: #ffffff;
+  background: #316dc2;
+  outline: 0;
+}
+
+.header__button-toggle:hover .header__button-toggle-icon,
+.header__button-toggle:focus-visible .header__button-toggle-icon {
+  background: #ffffff;
+}
+
+.header__button-toggle:hover .header__button-toggle-icon::before,
+.header__button-toggle:hover .header__button-toggle-icon::after,
+.header__button-toggle:hover .header__button-toggle-border,
+.header__button-toggle:focus-visible .header__button-toggle-icon::before,
+.header__button-toggle:focus-visible .header__button-toggle-icon::after,
+.header__button-toggle:focus-visible .header__button-toggle-border {
+  background-color: #316dc2;
 }
 
 .header__button-toggle--active {
@@ -177,6 +209,25 @@
   top: 25px;
 }
 
+.header__button-toggle--active:hover,
+.header__button-toggle--active:focus-visible {
+  color: #316dc2;
+  background: #ffffff;
+  outline: 0;
+}
+
+.header__button-toggle--active:hover .header__button-toggle-icon,
+.header__button-toggle--active:focus-visible .header__button-toggle-icon {
+  background: #316dc2;
+}
+
+.header__button-toggle--active:hover .header__button-toggle-icon::after,
+.header__button-toggle--active:focus-visible .header__button-toggle-icon::after,
+.header__button-toggle--active:hover .header__button-toggle-icon::before,
+.header__button-toggle--active:focus-visible .header__button-toggle-icon::before {
+  background: #ffffff;
+}
+
 .header__nav-inner-wrapper {
   background-color: $color-main-btn;
   border-radius: 16px;
@@ -206,8 +257,16 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.32px;
+  cursor: pointer;
+  user-select: none;
 
   color: rgba(255, 255, 255, 0.7);
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus-visible {
+  color: #ffffff;
+  outline: 0;
 }
 
 .header__accordion-button {
@@ -222,10 +281,18 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.32px;
+  cursor: pointer;
+  user-select: none;
 
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.header__accordion-button:hover,
+.header__accordion-button:focus-visible {
+  color: #ffffff;
+  outline: none;
 }
 
 .header__accordion-list {
@@ -251,4 +318,8 @@
 .header__nav-sublink {
   text-transform: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.header__nav-element.is-active svg {
+  transform: rotate(180deg);
 }

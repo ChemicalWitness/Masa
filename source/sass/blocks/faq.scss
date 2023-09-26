@@ -87,6 +87,33 @@
   }
 }
 
+.faq__qustions-item:hover {
+  background-color: $color-default-white;
+}
+
+.faq__qustions-item:hover .faq__qustions-button {
+  background-color: $color-default-white;
+}
+
+.faq__qustions-item.is-active:hover {
+  background-color: #316dc3;
+}
+
+.faq__qustions-item.is-active:hover .faq__qustions-button,
+.faq__qustions-item.is-active:focus-visible .faq__qustions-button {
+  background-color: $color-acc-bg;
+  border-color: $color-default-white;
+
+  &::before {
+    background-color: $color-default-white;
+  }
+}
+
+.faq__qustions-item:hover .faq__qustions-button::after,
+.faq__qustions-item:hover .faq__qustions-button::before {
+  background-color: #316dc3;
+}
+
 .faq__qustions-title {
   display: grid;
   grid-template-columns: auto auto;
@@ -124,12 +151,23 @@
   position: relative;
   margin: 0;
   padding: 0;
-  border: none;
   width: 40px;
   height: 40px;
   justify-self: end;
   background-color: $color-main-btn;
   border-radius: 50%;
+  border: 1px solid #316dc3;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq__qustions-button:active {
+  background-color: $color-active-btn;
+
+  &::after,
+  ::before {
+    background-color: $color-default-white;
+  }
 }
 
 .faq__qustions-button::before,
